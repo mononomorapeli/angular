@@ -1,14 +1,15 @@
-<div class="row">
-    <div class="col" *ngFor="let product of products">
-    <div class="card h-100">
-        <img src="{{product.image}}" class="card-img-top" alt="...">
-   <div class="card-body">
-    <h5 class="card-title">{{product.title}}</h5>
-    <p class="card-text">{{product.description}}</p>
-  </div>
-  <div class="card-footer">
-    <small class="text-body-secondary">${{product.price}}</small>
-  </div>
-  </div>
-  </div>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 col-sm-6" *ngFor="let product of products">
+        <div class="card mb-3" style="width: 18rem;">
+            <img src="{{product.image}}" class="card-img-top" alt="..." width="280px" height="350px">
+        <div class="card-body" style="height: 7rem;">
+        <h5 class="card-title">{{product.title}}</h5>
+        <!-- <p class="card-text overflow-hidden">{{product.description}}</p> -->
+        </div>
+        <div class="card-footer">
+            <small class="text-body-secondary">${{product.price}}</small>
+        </div>
+      </div>
+    </div>
 </div>
